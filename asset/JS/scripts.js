@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let tickColor = theme === 'dark' ? 'white' : 'black';
         cookieChart.options.scales.x.ticks.color = tickColor;
         cookieChart.options.scales.y.ticks.color = tickColor;
+        cookieChart.options.plugins.legend.labels.color = tickColor;
+        cookieChart.options.scales.x.grid.color = tickColor;
+        cookieChart.options.scales.x.border.color = tickColor;
         cookieChart.update();
     }
 
